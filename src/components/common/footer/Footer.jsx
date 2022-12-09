@@ -81,7 +81,10 @@ const Footer = () => {
         <div className="container flexSB">
           <p>&copy; all rights reserved</p>
           <p>
-            made with <i className="fa fa-heart"></i> by reqima-dev
+            made with <i className="fa fa-heart"></i>
+            <a href="https://github.com/Reqima-dev" target="_blank">
+              by reqima-dev
+            </a>
           </p>
         </div>
       </div>

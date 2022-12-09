@@ -67,3 +67,9 @@ header li a:hover {
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 538px) {
+  .head .logo img {
+    width: 293px;
+  }
+}
