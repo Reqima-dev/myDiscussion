@@ -1,8 +1,8 @@
 {
-  "homepage": "https://reqima-dev.github.io/myDiscussion",
   "name": "my-discussion",
+  "homepage": "https://reqima-dev.github.io/myDiscussion",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
