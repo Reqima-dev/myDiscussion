@@ -5,6 +5,7 @@ import SocialMedia from "../social/SocialMedia";
 import Tpost from "../tpost/Tpost";
 import "./side.css";
 import Slider from "react-slick";
+import sliderBannerNew from "../../../../images/sidebar-banner-new.jpg";
 
 const Side = () => {
   const settings = {
@@ -12,7 +13,7 @@ const Side = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   const category = [
@@ -45,7 +46,7 @@ const Side = () => {
       </section>
 
       <section className="banner">
-        <img src="./images/sidebar-banner-new.jpg" alt="" />
+        <img src={sliderBannerNew} alt="" />
       </section>
 
       <Tpost />
@@ -64,13 +65,13 @@ const Side = () => {
       <section className="gallery">
         <Heading title="Gallery" />
         <Slider {...settings}>
-        {gallery.map((val) => {
-          return (
-            <div className="img">
-              <img src={val.cover} alt="" />
-            </div>
-          );
-        })}
+          {gallery.map((val) => {
+            return (
+              <div className="img">
+                <img src={val.cover} alt="" />
+              </div>
+            );
+          })}
         </Slider>
       </section>
     </>

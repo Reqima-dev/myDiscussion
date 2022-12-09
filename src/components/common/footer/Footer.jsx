@@ -1,5 +1,9 @@
 import React from "react";
 import "./footer.css";
+import hero01 from "../../../images/hero/hero1.jpg";
+import hero02 from "../../../images/hero/hero2.jpg";
+import hero03 from "../../../images/hero/hero3.jpg";
+import hero04 from "../../../images/hero/hero4.jpg";
 
 const Footer = () => {
   return (
@@ -22,11 +26,11 @@ const Footer = () => {
           <div className="box">
             <h3>SPORT</h3>
             <div className="item">
-              <img src="../images/hero/hero1.jpg" alt="" />
+              <img src={hero01} alt="" />
               <p>Google TO Boost Android Security In Few Days</p>
             </div>
             <div className="item">
-              <img src="../images/hero/hero2.jpg" alt="" />
+              <img src={hero02} alt="" />
               <p>Google TO Boost Android Security In Few Days</p>
             </div>
           </div>
@@ -34,11 +38,11 @@ const Footer = () => {
           <div className="box">
             <h3>CRICKET</h3>
             <div className="item">
-              <img src="../images/hero/hero3.jpg" alt="" />
+              <img src={hero03} alt="" />
               <p>Google TO Boost Android Security In Few Days</p>
             </div>
             <div className="item">
-              <img src="../images/hero/hero4.jpg" alt="" />
+              <img src={hero04} alt="" />
               <p>Google TO Boost Android Security In Few Days</p>
             </div>
           </div>
@@ -76,7 +80,9 @@ const Footer = () => {
       <div className="legal">
         <div className="container flexSB">
           <p>&copy; all rights reserved</p>
-          <p>made with <i className="fa fa-heart"></i> by reqima-dev</p>
+          <p>
+            made with <i className="fa fa-heart"></i> by reqima-dev
+          </p>
         </div>
       </div>
     </>

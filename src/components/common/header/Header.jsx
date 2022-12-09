@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Head from "./Head";
 import "./header.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
-  const [navbar, setNavbar] = useState(false)
-
+  const [navbar, setNavbar] = useState(false);
 
   return (
     <>
@@ -15,8 +13,10 @@ const Header = () => {
       <header>
         <div className="container paddingSmall">
           <nav>
-            <ul className={ navbar ? "navbar": 'flex'} 
-              onClick={() => setNavbar(false)}>
+            <ul
+              className={navbar ? "navbar" : "flex"}
+              onClick={() => setNavbar(false)}
+            >
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -39,8 +39,12 @@ const Header = () => {
                 <Link to="/reviews">reviews</Link>
               </li>
             </ul>
-            <button className="barIco" onClick={() => setNavbar (!navbar)}>
-              {navbar ? <i className="fa fa-times"></i> : <i className="fa fa-bars"></i>}
+            <button className="barIco" onClick={() => setNavbar(!navbar)}>
+              {navbar ? (
+                <i className="fa fa-times"></i>
+              ) : (
+                <i className="fa fa-bars"></i>
+              )}
             </button>
           </nav>
         </div>
